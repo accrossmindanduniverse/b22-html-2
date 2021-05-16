@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.container {
+  width: 860px;
+  justify-content: center;
+  height: auto;
+  padding: 15px;
+  margin: 50px auto;
+  box-sizing: content-box;
+  position: relative;
+}
+
+/* header */
+
+.header {
+  display: grid;
+  margin: auto;
+  grid-template-areas: 
+  'nav nav'
+  'h1 h1'
+  'h2 h2';
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  font-family: 'Raleway', sans-serif;
+}
+
+#nav {
+  grid-area: nav;
+  background: linear-gradient(rgb(73, 153, 73), rgb(136, 223, 136));
+  height: 50px;
+  text-transform: uppercase;
+}
+
+#link{
+  text-decoration: none;
+  position: relative;
+  color: azure;
+  top: 15px;
+  margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#link:hover {
+  color: aqua;
+}
+
+#title {
+  grid-area: h1;
+  text-transform: uppercase;
+}
+
+h2 {
+  border: 1px solid greenyellow;
+  background-color: rgb(155, 218, 61) ;
+  color: rgb(231, 244, 255);
+  font-size: 15px;
+  padding: 5px;
+  width: 300px;
+  border-radius: 3px;
+}
+
+#posted-by {
+  grid-area: h2;
+}
+
+#time-comments {
+  grid-area: h2;
+  position: relative;
+  left: 340px;
+}
+
+/* contents */
+
+.contents {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-areas:
+  'img p1'
+  'img p1'
+  'p2 p2';
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  text-align: justify;
+}
+
+.img {
+  grid-area: img;
+  width: 380px;
+  height: 200px;
+}
+
+#p1 {
+  grid-area: p1;
+  right: 78%;
+  width: 400px;
+  position: relative;
+  box-sizing: content-box;
+}
+
+#p2 {
+  grid-area: p2;
+  width: 820px;
+}
+
+/* project1 */
+
+.project {
+  font-family: 'Raleway', sans-serif;
+  width: 700px;
+}
+
+#pembuatan {
+  grid-area: h1p;
+}
+
+#isi {
+  grid-area: h2i;
+}
+
+#dasar {
+  grid-area: h1d;
+}
+
+#p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11 {
+  text-align: justify;
+  background: rgb(192, 192, 192);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.read-more{
+  display: none;
+}
+
+#read-more-btn {
+  color: rgb(114, 30, 30);
+  position: relative;
+  left: 85%;
+  bottom: 5px;
+  border: 0px;
+  background: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  color: rgb(175, 41, 216);
+}
+
+.contents.turned-into-more-project .read-more{
+  display: inline;
+}
+
+.source {
+  position: relative;
+}
